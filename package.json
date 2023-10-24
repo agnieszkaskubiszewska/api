@@ -13,6 +13,7 @@
     "pretier": "^0.0.1"
   },
   "devDependencies": {
-    "axios": "^1.5.1"
+    "axios": "^1.5.1",
+    "jest-html-reporter": "^3.10.2"
   }
 }
