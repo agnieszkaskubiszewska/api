@@ -18,7 +18,13 @@ test('should not find a post with an invalid ID', async () => {
     expect(error.response.status).toBe(404); 
   }
 });
-
+test('should not find a post with an invalid ID format', async () => {
+  try {
+    await axios.get('https://jsonplaceholder.typicode.com/posts/a'); 
+  } catch (error) {
+    expect(error.response.status).toBe(404); 
+  }
+});
 test('should handle network errors gracefully', async () => {
   try {
     await axios.get('https://nonexistent-api-url.com'); 

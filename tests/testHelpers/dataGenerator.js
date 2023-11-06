@@ -1,5 +1,3 @@
-// testHelpers/dataGenerator.js
-
 function generateTestData() {
     const postData = {
       title: 'foo',
